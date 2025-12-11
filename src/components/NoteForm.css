@@ -1,0 +1,5 @@
+.note-form textarea { width: 100%; height: 80px; margin-bottom: 10px; }
+.note-form button {
+    background-color: #0d6efd; color: white; border: none;
+    padding: 8px 15px; border-radius: 4px; cursor: pointer;
+}

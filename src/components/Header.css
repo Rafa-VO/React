@@ -1,0 +1,13 @@
+.app-header {
+    background-color: #1a1a1a;
+    color: #f5c518; /* Amarillo tipo IMDb */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.app-header__nav span {
+    margin-left: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}

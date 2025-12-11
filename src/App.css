@@ -1,0 +1,8 @@
+.app-container { font-family: 'Segoe UI', sans-serif; background-color: #f4f4f4; min-height: 100vh; }
+.app-content { display: flex; max-width: 1200px; margin: 0 auto; padding: 20px; gap: 20px; }
+.app-sidebar { flex: 1; min-width: 300px; }
+.app-main { flex: 2; }
+
+@media (max-width: 768px) {
+    .app-content { flex-direction: column; }
+}
