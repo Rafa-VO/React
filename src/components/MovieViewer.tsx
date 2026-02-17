@@ -1,38 +1,67 @@
-import type { Pelicula } from "../types/pelicula";
+import type { PeliculaUsuario } from "../types/pelicula";
 import EstadoBadge from "./EstadoBadge";
 import NoteForm from "./NoteForm";
 import "./MovieViewer.css";
 
 interface MovieViewerProps {
-    pelicula: Pelicula | null;
-    actualizarNota: (id: number, nota: string) => void;
+    pelicula: PeliculaUsuario | null;
+    actualizarNota: (idUserMovie: number, nota: string) => void;
+    cambiarEstado: (idUserMovie: number) => void;
+    onRemove: (idUserMovie: number) => void;
 }
 
-function MovieViewer({ pelicula, actualizarNota }: MovieViewerProps) {
+function MovieViewer({ pelicula, actualizarNota, cambiarEstado, onRemove }: MovieViewerProps) {
+    
     if (!pelicula) {
         return <div className="movie-viewer-empty">Selecciona una película para ver los detalles</div>;
+    }
+
+    function handleStatusClick() {
+        if (pelicula) cambiarEstado(pelicula.userMovieId);
+    }
+
+    function handleRemoveClick() {
+        if (pelicula) onRemove(pelicula.userMovieId);
+    }
+
+    function handleSaveNote(texto: string) {
+        if (pelicula) actualizarNota(pelicula.userMovieId, texto);
     }
 
     return (
         <main className="movie-viewer">
             <div className="movie-viewer__header">
-                <h2>{pelicula.titulo} <small>({pelicula.anio})</small></h2>
-                <EstadoBadge visto={pelicula.visto} texto={pelicula.visto ? "YA VISTA" : "POR VER"} />
+                <div>
+                    <h2 className="movie-viewer__title">
+                        {pelicula.titulo} <small className="movie-viewer__year">({pelicula.anio})</small>
+                    </h2>
+                    
+                    <div onClick={handleStatusClick} className="movie-viewer__status">
+                        <EstadoBadge 
+                            visto={pelicula.visto} 
+                            texto={pelicula.visto ? "Vista" : "Pendiente"} 
+                        />
+                    </div>
+                </div>
+
+                <button onClick={handleRemoveClick} className="btn-remove-movie">
+                    Quitar de mi lista
+                </button>
             </div>
             
             <div className="movie-viewer__content">
                 <img src={pelicula.poster} alt={pelicula.titulo} />
+                
                 <div className="movie-viewer__details">
                     <p><strong>Director:</strong> {pelicula.director}</p>
                     <p><strong>Género:</strong> {pelicula.genero}</p>
                     
-                    <hr />
+                    <hr className="movie-viewer__divider" />
                     
-                    {/* Renderizamos el formulario pasándole la función de callback */}
-                    <NoteForm 
-                        key={pelicula.id} 
-                        notaActual={pelicula.notaPersonal} 
-                        guardarNota={(texto) => actualizarNota(pelicula.id, texto)}
+                    <NoteForm
+                        key={pelicula.id}
+                        notaActual={pelicula.notaPersonal}
+                        guardarNota={handleSaveNote}
                     />
                 </div>
             </div>

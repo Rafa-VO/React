@@ -1,14 +1,99 @@
+/* --- TUS ESTILOS ORIGINALES --- */
 .movie-card {
     display: flex;
-    gap: 10px;
+    gap: 15px;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 8px;
     margin-bottom: 10px;
-    cursor: pointer;
     background: white;
-    transition: transform 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s;
+    /* El cursor lo manejamos con clases ahora */
 }
-.movie-card:hover { transform: translateX(5px); border-color: #f5c518; }
-.movie-card__img { width: 60px; height: 90px; object-fit: cover; border-radius: 4px; }
-.movie-card__info h4 { margin: 0 0 5px 0; color: #333; }
+
+.movie-card:hover { 
+    transform: translateX(5px); 
+    border-color: #0d6efd; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+.movie-card__img { 
+    width: 60px; 
+    height: 90px; 
+    object-fit: cover; 
+    border-radius: 4px; 
+}
+
+.movie-card__info h4 { 
+    margin: 0 0 5px 0; 
+    color: #333; 
+    font-size: 1rem; 
+}
+
+.movie-card__info p { 
+    margin: 0 0 5px 0; 
+    font-size: 0.9rem; 
+    color: #666; 
+}
+
+/* Acciones de admin */
+.movie-card__admin-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 10px;
+}
+
+.btn-icon {
+    border: none;
+    border-radius: 4px;
+    padding: 6px;
+    color: white;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    font-size: 1rem;
+}
+
+.btn-icon:hover { opacity: 0.8; }
+.btn-icon.edit { background-color: #3b82f6; }
+.btn-icon.delete { background-color: #ef4444; }
+
+/* --- NUEVOS ESTILOS EXTRAÍDOS --- */
+
+/* Clases para el cursor dinámico */
+.cursor-pointer { cursor: pointer; }
+.cursor-default { cursor: default; }
+
+/* Contenedor de info flexible */
+.movie-card__info-flex {
+    flex: 1;
+}
+
+/* Estado Cartelera (En lista / No en lista) */
+.status-wrapper {
+    margin-top: 5px;
+}
+
+.status-text {
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: block;
+}
+
+.status-added { color: #22c55e; }
+.status-not-added { color: #999; }
+
+/* Botón Quitar */
+.btn-remove-list {
+    margin-top: 10px;
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

@@ -5,6 +5,12 @@ export type Pelicula = {
     anio: number;
     poster: string;
     genero: string;
+    sinopsis: string;
+}
+
+export type PeliculaUsuario = Pelicula & {
+    userMovieId: number;
+    userId: number;
     visto: boolean;
-    notaPersonal?: string; // Opcional
+    notaPersonal: string;
 }

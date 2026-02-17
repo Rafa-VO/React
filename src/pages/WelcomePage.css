@@ -1,0 +1,114 @@
+.welcome-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    
+    /* Imagen de fondo */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.5), rgba(0,0,0,0.8)), 
+                url('https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=1925&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.welcome-header {
+    margin-bottom: 20px;
+}
+
+.welcome-logo {
+    font-size: 5rem;
+    font-weight: 900;
+    color: #f5c518;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    margin: 0;
+    text-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    line-height: 1;
+}
+
+.welcome-icon {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.welcome-text {
+    font-size: 1.5rem;
+    color: #e0e0e0;
+    max-width: 600px;
+    margin: 20px 0 50px 0;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.welcome-actions {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-welcome {
+    padding: 15px 50px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-primary {
+    background-color: #f5c518;
+    color: #000;
+    box-shadow: 0 5px 15px rgba(245, 197, 24, 0.4);
+}
+.btn-primary:hover {
+    background-color: #ffdb4d;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(245, 197, 24, 0.6);
+}
+
+/* --- AQUÍ ESTÁ EL CAMBIO --- */
+.btn-secondary {
+    /* 1. COLORES (Estilo blanquito) */
+    background-color: transparent !important;
+    color: #ffffff !important;
+    border: 2px solid #ffffff !important;
+
+    /* 2. GEOMETRÍA (Aquí forzamos que sea idéntico al amarillo) */
+    border-radius: 50px !important;   /* Esto lo hace ovalado */
+    padding: 15px 50px !important;    /* Esto asegura el mismo tamaño */
+    font-size: 1.1rem !important;     /* Misma letra */
+    font-weight: 700 !important;      /* Mismo grosor */
+    text-transform: uppercase !important;
+    box-shadow: none !important;
+    
+    /* Aseguramos que no tenga ancho fijo distinto */
+    min-width: fit-content;
+}
+
+.btn-secondary:hover {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border-color: #ffffff !important;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3) !important;
+}
+/* --------------------------- */
+
+@media (max-width: 600px) {
+    .welcome-logo { font-size: 3.5rem; }
+    .welcome-text { font-size: 1.1rem; }
+    .welcome-actions { flex-direction: column; width: 100%; }
+    .btn-welcome { width: 100%; text-align: center; }
+}

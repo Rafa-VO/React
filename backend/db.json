@@ -1,0 +1,205 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@gmail.com",
+      "name": "admin",
+      "passwordHash": "$2b$10$jaqdrGrwp/Z5deemWdy5.OoN4QXw9bTO136ea52CHc3XRPmnnQJl2",
+      "role": "admin",
+      "banned": false
+    },
+    {
+      "id": 2,
+      "email": "rafa@gmail.com",
+      "name": "Rafael",
+      "passwordHash": "$2b$10$9V9aO6M0kcJloQ9T9DPzveETVOukieDEqqwwJDM3fY9UnTW3oBL.y",
+      "role": "user",
+      "banned": false
+    },
+    {
+      "id": 3,
+      "email": "paula@gmail.com",
+      "name": "Paula",
+      "passwordHash": "$2b$10$wXw7Rep7AhzSX3VEyKQj2OddFucDoVy2Ymp3GEX4hysQez9wVIDgK",
+      "role": "user",
+      "banned": false
+    },
+    {
+      "id": 4,
+      "email": "pepe@gmail.com",
+      "name": "Pepe",
+      "passwordHash": "$2b$10$q8gtiC1pS9NNXeitN9FPn./xoEWmoHxBnVNiIWUS4o5kxGHYLIAeK",
+      "role": "user",
+      "banned": false
+    },
+    {
+      "id": 5,
+      "email": "miguel@gmail.com",
+      "name": "Miguel",
+      "passwordHash": "$2b$10$hek3dHsZgwKNZLsbOhF5yuIr4qadlzcWfTcHR6jZGmW0L0PSOd7rq",
+      "role": "user",
+      "banned": false
+    },
+    {
+      "id": 6,
+      "email": "jose@gmail.com",
+      "name": "Jose",
+      "passwordHash": "$2b$10$Tu2yjewxC1BT/4ev9hoh0OZUFzq6WsqqwrXqCq6eMZR/lY2O2DWGO",
+      "role": "user",
+      "banned": false
+    }
+  ],
+  "movies": [
+    {
+      "id": 1,
+      "titulo": "Inception",
+      "director": "Christopher Nolan",
+      "anio": "2010",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_.jpg",
+      "genero": "Ciencia ficción/Acción",
+      "sinopsis": "Dom Cobb es un ladrón experto en el arte de extraer valiosos secretos del subconsciente durante el estado de sueño. Su habilidad lo ha convertido en un fugitivo, pero se le ofrece una oportunidad de redención: implantar una idea en lugar de robarla."
+    },
+    {
+      "id": 2,
+      "titulo": "El Padrino",
+      "director": "Francis Ford Coppola",
+      "anio": 1972,
+      "poster": "https://images.justwatch.com/poster/289648853/s718/el-padrino.jpg",
+      "genero": "Crimen/Drama",
+      "sinopsis": "Don Vito Corleone es el respetado y temido jefe de una de las cinco familias de la mafia de Nueva York. Cuando su hijo Michael decide unirse al negocio familiar para proteger a su padre, comienza un ciclo de violencia y traición."
+    },
+    {
+      "id": 3,
+      "titulo": "Avatar 3",
+      "director": "James Cameron",
+      "anio": 2025,
+      "poster": "https://i.blogs.es/c3a11c/cf7he1ify4unbs25tgnatyydri2/450_1000.jpeg",
+      "genero": "Acción/Fantasía",
+      "sinopsis": "Jake Sully y Neytiri continúan su viaje por el vasto mundo de Pandora, enfrentándose a nuevos clanes Na'vi, incluyendo al 'Pueblo de la Ceniza', una cultura más agresiva vinculada al fuego y la destrucción."
+    },
+    {
+      "id": 4,
+      "titulo": "El Rey León",
+      "director": "Rob Minkoff y Roger Allers",
+      "anio": 1994,
+      "poster": "https://images.justwatch.com/poster/97686306/s718/el-rey-leon.jpg",
+      "genero": "Infantil/Musical",
+      "sinopsis": "Tras la trágica muerte de su padre, el joven león Simba huye de las Tierras del Reino para descubrir el verdadero significado de la responsabilidad y el valor, regresando años después para reclamar su lugar como el legítimo rey."
+    },
+    {
+      "id": 5,
+      "titulo": "El Titanic",
+      "director": "James Cameron",
+      "anio": 1997,
+      "poster": "https://es.web.img3.acsta.net/medias/nmedia/18/86/91/41/19870073.jpg",
+      "genero": "Romance/Aventura",
+      "sinopsis": "Una joven aristócrata y un artista humilde se enamoran a bordo del lujoso e infortunado RMS Titanic durante su viaje inaugural, luchando por su amor mientras el barco se dirige hacia una tragedia histórica."
+    },
+    {
+      "id": 6,
+      "titulo": "Stars Wars: El ascenso de Skywalker",
+      "director": "J. J. Abrams",
+      "anio": 2019,
+      "poster": "https://lumiere-a.akamaihd.net/v1/images/image_c671e2ee.jpeg?region=0,0,540,810",
+      "genero": "Ciencia ficción/Acción",
+      "sinopsis": "En el capítulo final de la saga Skywalker, los restos de la Resistencia se enfrentan una vez más a la Primera Orden, mientras Rey, Finn y Poe Dameron se preparan para una batalla épica para decidir el destino de la galaxia."
+    },
+    {
+      "id": 7,
+      "titulo": "El Señor de los Anillos",
+      "director": "Peter Jackson",
+      "anio": 2001,
+      "poster": "https://m.media-amazon.com/images/M/MV5BOGFkYWJhOGQtODVlOC00OGU2LTgwM2ItZjI0M2Q3NzU5Nzk2XkEyXkFqcGc@._V1_.jpg",
+      "genero": "Fantasía/Aventura",
+      "sinopsis": "Un humilde Hobbit llamado Frodo Bolsón hereda un anillo que posee el poder de destruir el mundo. Junto a una comunidad de héroes, emprende un peligroso viaje hacia el Monte del Destino para destruirlo antes de que caiga en manos del Señor Oscuro."
+    },
+    {
+      "id": 8,
+      "titulo": "Jurassic Park",
+      "director": "Steven Spielberg",
+      "anio": 1993,
+      "poster": "https://static.wikia.nocookie.net/whumpapedia/images/7/76/Jurassic_Park.jpg",
+      "genero": "Aventura/Ciencia ficción",
+      "sinopsis": "Un multimillonario crea un parque temático en una isla remota habitado por dinosaurios reales clonados a partir de ADN prehistórico. Durante una visita de prueba, el sistema de seguridad falla y las criaturas escapan."
+    },
+    {
+      "id": 9,
+      "titulo": "Cars",
+      "director": "John Lasseter",
+      "anio": 2006,
+      "poster": "https://images.justwatch.com/poster/301108249/s166/cars.jpg",
+      "genero": "Infantil/Comedia",
+      "sinopsis": "El ambicioso coche de carreras Rayo McQueen termina perdido en un pequeño pueblo olvidado de la Ruta 66 llamado Radiador Springs, donde descubre que la vida se trata del viaje y de los amigos, no de cruzar la meta primero."
+    },
+    {
+      "id": 10,
+      "titulo": "Como entrenar a tu dragón",
+      "director": "Dean DeBlois",
+      "anio": 2025,
+      "poster": "https://m.media-amazon.com/images/S/pv-target-images/b31091c08e1cdd6e4d1f5ada850af0cf769636145a042c913e6f240e2d623348.jpg",
+      "genero": "Aventura/Fantasía",
+      "sinopsis": "Un joven vikingo llamado Hipo forja una amistad improbable con un dragón herido al que llama Desdentao. Juntos, deben luchar contra los prejuicios de sus tribus para demostrar que humanos y dragones pueden convivir en paz."
+    },
+    {
+      "id": 11,
+      "titulo": "Avengers: Endgame",
+      "director": "Anthony Russo, Joe Russo",
+      "anio": 2019,
+      "poster": "https://hips.hearstapps.com/hmg-prod/images/avengers-endgame-poster-square-crop-1556539756.jpg",
+      "genero": "Ciencia ficción/Acción",
+      "sinopsis": "Tras los devastadores eventos de 'Infinity War', el universo está en ruinas debido a las acciones del Titán Loco, Thanos. Con la ayuda de los aliados que quedan, los Vengadores deberán reunirse una vez más para intentar deshacer sus acciones y restaurar el orden en el universo de una vez por todas, sin importar las consecuencias.",
+      "userId": 1
+    }
+  ],
+  "user_movies": [
+    {
+      "id": 1,
+      "userId": 1,
+      "movieId": 1,
+      "visto": true,
+      "notaPersonal": "Obra maestra"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "movieId": 2,
+      "visto": true,
+      "notaPersonal": ""
+    },
+    {
+      "userId": 2,
+      "movieId": 3,
+      "visto": true,
+      "notaPersonal": "",
+      "id": 10
+    },
+    {
+      "userId": 4,
+      "movieId": 2,
+      "visto": false,
+      "notaPersonal": "Quiero verla",
+      "id": 14
+    },
+    {
+      "userId": 2,
+      "movieId": 6,
+      "visto": false,
+      "notaPersonal": "",
+      "id": 16
+    },
+    {
+      "userId": 2,
+      "movieId": 11,
+      "visto": true,
+      "notaPersonal": "",
+      "id": 17
+    },
+    {
+      "userId": 6,
+      "movieId": 1,
+      "visto": false,
+      "notaPersonal": "",
+      "id": 18
+    }
+  ]
+}

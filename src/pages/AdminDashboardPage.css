@@ -1,0 +1,86 @@
+/* Estructura general */
+.admin-card { max-width: 1000px; width: 100%; }
+.admin-description { color: #666; }
+
+/* Tabla */
+.admin-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+.admin-table-head { background: #333; color: white; text-align: left; }
+.admin-th { padding: 12px; }
+.admin-tr { border-bottom: 1px solid #eee; }
+.admin-td { padding: 12px; }
+.admin-email { color: #666; }
+
+/* Badges de ROL */
+.role-badge { padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; }
+.role-admin { background: #dbeafe; color: #1e40af; }
+.role-user { background: #f3f4f6; color: #374151; }
+
+/* Estados de Baneo */
+.status-banned { color: #ef4444; font-weight: bold; }
+.status-active { color: #22c55e; font-weight: bold; }
+
+/* Celda de Acciones */
+.actions-cell { padding: 12px; display: flex; gap: 8px; flex-wrap: wrap; }
+
+/* --- BOTONES DE ACCIÓN --- */
+.btn-action {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    color: white !important;
+    font-size: 0.9rem;
+    transition: filter 0.2s;
+}
+.btn-action:hover { filter: brightness(0.9); }
+
+/* Colores de botones */
+.btn-blue { background-color: #0ea5e9; }   /* Lista */
+.btn-orange { background-color: #f97316; } /* Rol */
+.btn-ban-green { background-color: #22c55e; } /* Desbanear */
+.btn-ban-red { background-color: #ef4444; }   /* Banear */
+
+
+/* --- MODAL ESPECÍFICO DEL ADMIN --- */
+.admin-modal-overlay { 
+    position: fixed; top: 0; left: 0; right: 0; bottom: 0; 
+    background: rgba(0,0,0,0.8); 
+    display: flex; justify-content: center; align-items: center; 
+    z-index: 9999; 
+}
+
+.admin-modal-content { 
+    background: white; 
+    padding: 30px; 
+    border-radius: 10px; 
+    max-width: 400px; 
+    width: 90%; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+/* Título del modal (Antes tenía style inline) */
+.admin-modal-title {
+    margin-top: 0;
+    color: #333;
+}
+
+.admin-modal-ul { 
+    padding-left: 20px; 
+    max-height: 300px; 
+    overflow-y: auto; 
+    color: #333; 
+}
+
+.admin-modal-li { margin-bottom: 5px; }
+
+/* Texto de lista vacía (Antes tenía style inline) */
+.admin-modal-empty {
+    color: #666;
+}
+
+.btn-close { 
+    margin-top: 15px; width: 100%; padding: 10px; 
+    background: #333; color: white !important; 
+    border: none; border-radius: 5px; cursor: pointer; 
+}

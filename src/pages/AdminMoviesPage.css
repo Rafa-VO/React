@@ -1,0 +1,61 @@
+/* Contenedor principal que ocupa todo el ancho */
+.admin-full-width {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Estilo específico para la tarjeta en esta página */
+.admin-card-expanded {
+    /* AQUÍ ESTÁ LA CLAVE DEL ANCHO */
+    width: 100% !important;
+    max-width: 1600px !important; /* Hazlo enorme si quieres */
+    min-width: 300px;
+    
+    margin: 0 auto;
+    display: block;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+/* Estilos del encabezado (Título + Botón) */
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #444; /* Un detallito visual opcional */
+    padding-bottom: 15px;
+}
+
+.admin-header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.admin-header p {
+    margin: 5px 0 0 0;
+    color: #aaa;
+}
+
+/* Responsive: En móviles, poner el botón debajo del título */
+@media (max-width: 600px) {
+    .admin-header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .btn-primary {
+        width: 100%;
+    }
+}
+
+.admin-header h1, 
+.admin-header p {
+    cursor: default; /* Esto fuerza el cursor de flecha normal */
+    /* O puedes usar 'text' si prefieres que salga la barrita para seleccionar texto */
+}

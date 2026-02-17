@@ -1,0 +1,61 @@
+/* src/components/MovieFormModal.css */
+
+.form-modal-content {
+    background-color: #222;
+    color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+}
+
+.movie-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: left;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+}
+.form-row .form-group {
+    flex: 1;
+}
+
+.movie-form input, .movie-form textarea {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: white;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* AQUÍ ESTÁ EL CAMBIO: De .btn-secondary a .btn-cancel */
+.btn-cancel {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px; /* Volvemos al borde cuadrado original */
+    cursor: pointer;
+}
+
+.btn-cancel:hover {
+    background-color: #666;
+}

@@ -1,0 +1,21 @@
+/* Ajuste específico para la tarjeta de la cartelera */
+.billboard-card {
+    max-width: 1000px;
+    width: 100%;
+}
+
+/* Cabecera de la sección */
+.billboard-header {
+    margin-bottom: 20px;
+}
+
+/* Título principal */
+.billboard-title {
+    margin: 0;
+}
+
+/* Subtítulo / Instrucciones */
+.billboard-subtitle {
+    color: #666;
+    margin-top: 5px;
+}

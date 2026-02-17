@@ -1,30 +1,17 @@
-import { useState, type ChangeEvent } from "react";
 import "./FilterBar.css";
 
 interface FilterBarProps {
-    filtrarPorTexto: (texto: string) => void;
+    onSearch: (texto: string) => void;
 }
 
-function FilterBar({ filtrarPorTexto }: FilterBarProps) {
-    const [busqueda, setBusqueda] = useState("");
-
-    function handleChange(e: ChangeEvent<HTMLInputElement>) {
-        const texto = e.target.value;
-        setBusqueda(texto);
-        filtrarPorTexto(texto); // Ejecuta la función del padre
-    }
-
+export default function FilterBar({ onSearch }: FilterBarProps) {
     return (
         <div className="filter-bar">
-            <input 
-                type="text" 
-                placeholder="Buscar película..." 
-                value={busqueda} 
-                onChange={handleChange} 
-                className="filter-bar__input"
+            <input
+                type="text"
+                placeholder="Buscar película..."
+                onChange={(e) => onSearch(e.target.value)}
             />
         </div>
     );
 }
-
-export default FilterBar;
