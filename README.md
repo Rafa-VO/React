@@ -45,13 +45,16 @@ Las siguientes variables de entorno se configuran en `docker-compose.yml`:
 
 ## Usuario de Prueba
 
-Para probar la aplicación, puedes usar el siguiente usuario de prueba:
+Para probar la aplicación, puedes usar los siguientes usuarios de prueba:
 
 - **Email:** admin@gmail.com
 - **Contraseña:** admin
 - **Rol:** Admin
 
-Otros usuarios disponibles en `backend/db.json` con la misma contraseña.
+- **Email:** rafa@gmail.com
+- **Contraseña:** 1234
+- **Rol:** user
+Otros usuarios disponibles en `backend/db.json`.
 
 ## Checklist Final de Requisitos Mínimos Cumplidos
 
